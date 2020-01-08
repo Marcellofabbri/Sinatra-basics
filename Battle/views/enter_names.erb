@@ -1,1 +1,14 @@
-<%= @player1 %> vs. <%= @player2 %>
+<!DOCTYPE html>
+<html>
+  <h1><%= @player1 %> vs. <%= @player2 %></h1>
+  <div><%=@player1%> Hit Points: 100</div>
+  <div><%=@player2%> Hit Points: 100</div>
+  
+  #<button type="button">Attack</button>
+
+  <form action="/play" method="get">
+  <button name="Attack" type="submit" value="message">ATTACK</button>
+
+  </form>
+
+</html>
