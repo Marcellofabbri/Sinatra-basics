@@ -1,14 +1,9 @@
-<!DOCTYPE html>
-<html>
-  <h1><%= @player1 %> vs. <%= @player2 %></h1>
-  <div><%=@player1%> HP: 100</div>
-  <div><%=@player2%> HP: 100</div>
+
+  <h1><%= @player1name %> vs. <%= @player2name %></h1>
+  <div><%=@player1name%> HP: 100</div>
+  <div><%=@player2name%> HP: 100 </div>
   <br>
   <form action="/action_page.php" method="get">
   <button type="submit" formaction="/attack" >Attack</button>
   </form>
 
-
- 
-
-</html>
