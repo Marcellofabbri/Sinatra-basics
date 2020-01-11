@@ -1,0 +1,12 @@
+<h1><%= @game.player1.name %> vs. <%= @game.player2.name %></h1>
+  <div><%=@game.player1.name%> HP: <%= @game.player1.hp %></div>
+  <div><%=@game.player2.name%> HP: <%= @game.player2.hp %></div>
+  <br>
+  <%= @game.player2.name %> attacked <%= @game.player1.name %>
+
+  
+  <form action="/action_page.php" method="get">
+  <button type="submit" formaction="/play" >Your turn</button>
+  </form>
+  <br>
+  <%= @game.current_turn.name %>'s turn

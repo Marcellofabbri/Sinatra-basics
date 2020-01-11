@@ -6,6 +6,7 @@ class Player
   def initialize(name, hp = DEFAULT_HP)
     @name = name
     @hp = hp
+<<<<<<< Updated upstream
   end
 
   def attack(player)
@@ -14,6 +15,18 @@ class Player
 
   def receive_damage
     @hp -= 10
+=======
+>>>>>>> Stashed changes
   end
+
+  def receive_damage
+    @hp -= 10
+  end
+
+#   def attack(opponent)
+#     opponent.receive_damage
+#   end
+
+
 
 end

@@ -1,7 +1,15 @@
 <!DOCTYPE html>
 <html>
+<<<<<<< Updated upstream
 <h1><%= @player1name %> attacked <%= @player2name %></h1>
 
 #<a href='/enter_names'>back</a>
 
+=======
+<h1><%= @game.player1.name %> attacked <%= @game.player2.name %></h1>
+
+<form action="/action_page.php" method="get">
+  <button type="submit" formaction="/wait" >Opponent's move</button>
+  </form>
+>>>>>>> Stashed changes
 </html>

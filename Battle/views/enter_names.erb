@@ -1,9 +1,20 @@
+<<<<<<< Updated upstream
 
   <h1><%= @player1name %> vs. <%= @player2name %></h1>
   <div><%=@player1name%> HP: 100</div>
   <div><%=@player2name%> HP: 100 </div>
+=======
+<!DOCTYPE html>
+<html>
+  <h1><%= @game.player1.name %> vs. <%= @game.player2.name %></h1>
+  <div><%=@game.player1.name%> HP: <%= @game.player1.hp %></div>
+  <div><%=@game.player2.name%> HP: <%= @game.player2.hp %></div>
+>>>>>>> Stashed changes
   <br>
+  
   <form action="/action_page.php" method="get">
   <button type="submit" formaction="/attack" >Attack</button>
   </form>
+  <br>
+  <%= @game.current_turn.name %>'s turn
 
